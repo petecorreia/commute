@@ -45,13 +45,21 @@ const Work = () => (
 		<Schedule>
 			<ScheduleIcon>🚍</ScheduleIcon>
 			<SchedulePipe color={colors.bus} />
-			<BusArrivals station="490005964N" filterByLines={['319', 'g1']} />
+			<BusArrivals
+				station="490005964N"
+				filterByLines={['319', 'g1']}
+				stationName="Darley Road"
+			/>
 		</Schedule>
 
 		<Schedule>
 			<ScheduleIcon>🚆</ScheduleIcon>
 			<SchedulePipe color={colors.train} />
-			<TrainStationDepartures station="CLJ" filterByPlatforms={['10']} />
+			<TrainStationDepartures
+				station="CLJ"
+				filterByPlatforms={['10']}
+				stationName="Clapham Junction"
+			/>
 		</Schedule>
 
 		<Schedule>
@@ -78,13 +86,18 @@ const Home = () => (
 			<TrainStationDepartures
 				station="WAT"
 				filterByPlatforms={['1', '2', '3', '4', '5', '6']}
+				stationName="Waterloo"
 			/>
 		</Schedule>
 
 		<Schedule>
 			<ScheduleIcon>🚍</ScheduleIcon>
 			<SchedulePipe color={colors.bus} />
-			<BusArrivals station="490005332T" filterByLines={['319', 'g1']} />
+			<BusArrivals
+				station="490005332T"
+				filterByLines={['319', 'g1']}
+				stationName="Clapham Junction"
+			/>
 		</Schedule>
 	</Itinerary>
 );

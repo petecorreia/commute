@@ -18,7 +18,12 @@ import {
 	Loading,
 } from './Schedule';
 
-const TrainStationDepartures = ({ station, filterByPlatforms, children }) => (
+const TrainStationDepartures = ({
+	station,
+	filterByPlatforms,
+	stationName,
+	children,
+}) => (
 	<Fetcher
 		fetch={cancelToken => fetch({ station, filterByPlatforms }, cancelToken)}
 		pollingInterval={60000}
@@ -71,7 +76,7 @@ const TrainStationDepartures = ({ station, filterByPlatforms, children }) => (
 							))}
 					</ScheduleTimetable>
 					<ScheduleExtra>
-						<ScheduleExtraLabel>Clapham Junction</ScheduleExtraLabel>
+						<ScheduleExtraLabel>{stationName}</ScheduleExtraLabel>
 					</ScheduleExtra>
 				</ScheduleContent>
 			);

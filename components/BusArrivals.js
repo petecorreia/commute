@@ -17,7 +17,7 @@ import {
 	Loading,
 } from './Schedule';
 
-const BusArrivals = ({ station, filterByLines, children }) => (
+const BusArrivals = ({ station, filterByLines, stationName, children }) => (
 	<Fetcher
 		fetch={cancelToken => fetch({ station, filterByLines }, cancelToken)}
 	>
@@ -49,7 +49,7 @@ const BusArrivals = ({ station, filterByLines, children }) => (
 						))}
 					</ScheduleTimetable>
 					<ScheduleExtra>
-						<ScheduleExtraLabel>Darley Road</ScheduleExtraLabel>
+						<ScheduleExtraLabel>{stationName}</ScheduleExtraLabel>
 					</ScheduleExtra>
 				</ScheduleContent>
 			);

@@ -91,7 +91,7 @@ const Home = () => (
 
 export default class App extends Component {
 	state = {
-		index: 0,
+		index: isMorning() ? 0 : 1,
 		routes: [{ key: 'first', title: 'Work' }, { key: 'second', title: 'Home' }],
 	};
 
@@ -110,7 +110,10 @@ export default class App extends Component {
 						),
 					});
 					return (
-						<TabItem onPress={() => this.setState({ index: i })}>
+						<TabItem
+							key={route.key}
+							onPress={() => this.setState({ index: i })}
+						>
 							<Animated.Text style={{ color, fontSize: 18 }}>
 								{route.title}
 							</Animated.Text>
@@ -141,4 +144,8 @@ export default class App extends Component {
 			</Container>
 		);
 	}
+}
+
+function isMorning() {
+	return new Date().getHours() <= 12;
 }

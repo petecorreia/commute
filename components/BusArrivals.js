@@ -30,7 +30,7 @@ const BusArrivals = ({ station, filterByLines, children }) => (
 			return (
 				<ScheduleContent>
 					<ScheduleTimetable>
-						<Text>
+						<Text style={{ marginBottom: 3 }}>
 							<ScheduleTimeProminentLabel color={colors.bus}>
 								{first.minsLeft} mins
 							</ScheduleTimeProminentLabel>

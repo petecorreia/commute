@@ -33,7 +33,7 @@ const TrainStationDepartures = ({ station, filterByPlatforms, children }) => (
 			return (
 				<ScheduleContent>
 					<ScheduleTimetable>
-						<View style={{ flexDirection: 'row' }}>
+						<View style={{ flexDirection: 'row', marginBottom: 3 }}>
 							<ScheduleTimeProminentLabel color={colors.train}>
 								{first.minsLeft} mins
 							</ScheduleTimeProminentLabel>

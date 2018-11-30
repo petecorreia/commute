@@ -38,7 +38,7 @@ export const ScheduleExtra = styled.View``;
 export const ScheduleExtraLabel = styled.Text.attrs({
 	numberOfLines: 1,
 })`
-	font-size: 18px;
+	font-size: 14px;
 	color: ${colors.gray};
 `;
 
@@ -57,7 +57,7 @@ export const Loading = () => (
 export const ScheduleTime = styled.Text.attrs({
 	numberOfLines: 1,
 })`
-	margin: 3px 0;
+	margin: 2px 0;
 `;
 
 export const ScheduleTimeProminentLabel = styled.Text`
@@ -80,6 +80,7 @@ export const ScheduleTimeProminentTiny = styled.Text`
 
 export const ScheduleTimeLabel = styled.Text`
 	font-size: 18px;
+	color: ${colors.grayDark};
 `;
 
 export const ScheduleTimeAside = styled.Text`

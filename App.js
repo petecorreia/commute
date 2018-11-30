@@ -139,6 +139,11 @@ export default class App extends Component {
 						renderTabBar={this.renderTabBar}
 						onIndexChange={this.handleIndexChange}
 						tabBarPosition="bottom"
+						initialLayout={{
+							height: 0,
+							width: Dimensions.get('window').width,
+						}}
+						useNativeDriver
 					/>
 				</SafeAreaView>
 			</Container>

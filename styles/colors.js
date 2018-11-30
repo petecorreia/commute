@@ -3,4 +3,5 @@ export default {
 	train: '#5AC8FA',
 	tube: '#FF2D55',
 	gray: '#A5A6A9',
+	grayDark: '#444',
 };

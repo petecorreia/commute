@@ -1,0 +1,29 @@
+{
+  "name": "commute",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "16.6.1",
+    "react-native": "0.57.7",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "9.x",
+    "babel-jest": "23.6.0",
+    "eslint-config-react-app": "^3.0.5",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.50.0",
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
